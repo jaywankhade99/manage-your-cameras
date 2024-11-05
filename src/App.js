@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CameraTable from "./components/cameraTable";
+import CmpnyLogo from "./images/Brand_Logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Centered SVG logo */}
+      <img src={CmpnyLogo} alt="Company Logo" className="logo" />
+      <h1>Cameras</h1>
+      <p>Manage your cameras here.</p>
+      <CameraTable />
     </div>
   );
 }
